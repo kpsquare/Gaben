@@ -1,4 +1,5 @@
 import discord
+import os
 from discord.ext import commands
 import random
 import re
@@ -38,5 +39,5 @@ async def gaben_listen(message):
     if match or similar > 60:
         await message.reply(f'{random.choice(responses)}', mention_author=False)
 
-        
-client.run('TOKEN_HERE')
+token = os.environ.get('api_key')        
+client.run(token)
