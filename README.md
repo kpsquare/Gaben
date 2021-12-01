@@ -1,6 +1,6 @@
 # Gaben
 
-required packages
-pip install discord.py
-pip install fuzzywuzzy
+### Required packages
+1. `pip install discord.py`
+2. `pip install fuzzywuzzy`
  
