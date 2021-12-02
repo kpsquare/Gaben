@@ -55,7 +55,7 @@ async def gaben_listen(message):
             embed.set_image(url='https://media1.giphy.com/media/AcbborW0z5XW0/giphy.gif')
             await ctx.send(embed=embed)
         else:
-        await message.reply(f'{response}', mention_author=False)
+            await message.reply(f'{response}', mention_author=False)
 
 token = os.environ.get('api_key')        
 client.run(token)
