@@ -28,7 +28,7 @@ async def gaben_listen(message):
                   '**GAAABEEN <:gaben:703198078836015154>**',
                   '**GABEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEN**',
                   '**prysnat <:suspect:589057771933138945>**',
-                  '||<:EDU:588721771373658123>||',
+                  '||<:EDU:588721771373658123>           ||',
                   '||<:gaben:703198078836015154> FREE MMR <:gaben:703198078836015154>||'
                   ]
     streamables = re.compile('[g|G]+[a|A]+[b|B]+[e|E]+[n|N]+')
