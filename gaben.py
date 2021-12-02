@@ -47,7 +47,7 @@ async def gaben_listen(message):
         return
     
     if match or similar > 60:
-        await message.reply(f'{random.choices(responses, weights = [10, 10, 10, 15, 15, 10, 10, 15, 1], k = 1)}', mention_author=False)
+        await message.reply(f'{"".join(random.choices(responses, weights = [10, 10, 10, 15, 15, 10, 10, 15, 1], k = 1))}', mention_author=False)
 
 token = os.environ.get('api_key')        
 client.run(token)
