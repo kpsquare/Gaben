@@ -7,6 +7,14 @@ from fuzzywuzzy import fuzz
 
 client = commands.Bot(command_prefix = '.')
 
+# Maika ti sheiba GABEEEEEEEEEEEEEEEEEN EIIIIIIIIII x (GABEN PEDERAS) = TRUE 
+# GABEN / 0 = 42
+# if GABEN or NEWELL > 1750 kg
+#    return my lost mmr
+#    await dota patch da mi preebesh geroq pak GABEEEEEEEEN
+
+
+
 @client.event
 async def on_ready():
     print('logged in')
