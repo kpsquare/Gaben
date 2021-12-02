@@ -21,15 +21,15 @@ async def on_ready():
     
 @client.listen('on_message')
 async def gaben_listen(message):
-    responses =  ['EIIIII GABEN',
-                  'GABEEEEEEN',
-                  'MmmmMMm GABEEEEEN',
+    responses =  ['**EIIIII GABEN**',
+                  '**GABEEEEEEN**',
+                  '**MmmmMMm GABEEEEEN**',
                   '<:gaben:703198078836015154>',
-                  'GAAABEEN <:gaben:703198078836015154>',
-                  'GABEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEN',
-                  'prysnat <:suspect:589057771933138945>',
-                  '<:EDU:588721771373658123>',
-                  '<:gaben:703198078836015154> FREE MMR <:gaben:703198078836015154>'
+                  '**GAAABEEN <:gaben:703198078836015154>**',
+                  '**GABEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEN**',
+                  '**prysnat <:suspect:589057771933138945>**',
+                  '||<:EDU:588721771373658123>||',
+                  '||<:gaben:703198078836015154> FREE MMR <:gaben:703198078836015154>||'
                   ]
     streamables = re.compile('[g|G]+[a|A]+[b|B]+[e|E]+[n|N]+')
     
@@ -47,7 +47,7 @@ async def gaben_listen(message):
         return
     
     if match or similar > 60:
-        await message.reply(f'{"".join(random.choices(responses, weights = [10, 10, 10, 15, 15, 10, 10, 15, 1], k = 1))}', mention_author=False)
+        await message.reply(f'{"".join(random.choices(responses, weights = [10, 10, 10, 15, 15, 10, 10, 3, 1], k = 1))}', mention_author=False)
 
 token = os.environ.get('api_key')        
 client.run(token)
