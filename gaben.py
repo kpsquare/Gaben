@@ -52,7 +52,9 @@ async def gaben_listen(message):
         if response == 'gif':
             ctx = await client.get_context(message)
             embed=discord.Embed()
-            embed.set_image(url='https://media1.giphy.com/media/AcbborW0z5XW0/giphy.gif')
+            gifs = ['https://media1.giphy.com/media/AcbborW0z5XW0/giphy.gif','https://i.pinimg.com/originals/34/44/46/344446e9a10e64452e95d6fb18c44457.jpg']
+            gif = "".join(random.choices(gifs, weights = [10, 10], k = 1))
+            embed.set_image(url=gif)
             await ctx.send(embed=embed)
         else:
             await message.reply(f'{response}', mention_author=False)
